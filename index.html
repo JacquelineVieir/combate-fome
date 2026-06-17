@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Conecta Alimento</title>
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Segoe UI', sans-serif;
+}
+
+body{
+background:#f4f7f4;
+color:#333;
+line-height:1.6;
+}
+
+header{
+background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)),
+url('https://images.unsplash.com/photo-1488459716781-31db52582fe9');
+background-size:cover;
+background-position:center;
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+color:white;
+padding:20px;
+}
+
+.hero h1{
+font-size:4rem;
+margin-bottom:20px;
+}
+
+.hero p{
+font-size:1.4rem;
+max-width:800px;
+margin:auto;
+}
+
+.btn{
+display:inline-block;
+margin-top:25px;
+padding:15px 30px;
+background:#2e7d32;
+color:white;
+text-decoration:none;
+border-radius:30px;
+font-weight:bold;
+}
+
+nav{
+background:#1b5e20;
+padding:15px;
+text-align:center;
+position:sticky;
+top:0;
+z-index:1000;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+margin:0 15px;
+font-weight:bold;
+}
+
+section{
+padding:70px 10%;
+}
+
+h2{
+text-align:center;
+margin-bottom:30px;
+color:#2e7d32;
+font-size:2rem;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:25px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+.card h3{
+margin-bottom:15px;
+color:#2e7d32;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:#2e7d32;
+color:white;
+padding:30px;
+border-radius:15px;
+}
+
+.stat h3{
+font-size:2.5rem;
+}
+
+form{
+max-width:700px;
+margin:auto;
+background:white;
+padding:30px;
+border-radius:15px;
+box-shadow:0 0 15px rgba(0,0,0,.1);
+}
+
+input, select, textarea{
+width:100%;
+padding:15px;
+margin-top:10px;
+margin-bottom:20px;
+border:1px solid #ccc;
+border-radius:8px;
+}
+
+button{
+background:#2e7d32;
+color:white;
+padding:15px;
+border:none;
+width:100%;
+border-radius:8px;
+font-size:18px;
+cursor:pointer;
+}
+
+footer{
+background:#1b5e20;
+color:white;
+text-align:center;
+padding:30px;
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="hero">
+
+<h1>Conecta Alimento</h1>
+
+<p>
+Tecnologia conectando quem doa a quem precisa.
+Combater a fome e a pobreza através da redução do desperdício de alimentos.
+</p>
+
+<a href="#cadastro" class="btn">Quero Participar</a>
+
+</div>
+
+</header>
+
+<nav>
+<a href="#sobre">Sobre</a>
+<a href="#objetivos">Objetivos</a>
+<a href="#impacto">Impacto</a>
+<a href="#cadastro">Cadastro</a>
+<a href="#contato">Contato</a>
+</nav>
+
+<section id="sobre">
+
+<h2>Sobre o Projeto</h2>
+
+<p style="text-align:center; max-width:900px; margin:auto;">
+O Conecta Alimento é uma iniciativa social desenvolvida em Uberlândia-MG
+para combater a fome e reduzir o desperdício de alimentos por meio da tecnologia.
+A plataforma conecta supermercados, feiras, restaurantes, produtores rurais e
+instituições sociais para que alimentos em boas condições cheguem às famílias que mais precisam.
+</p>
+
+</section>
+
+<section id="objetivos">
+
+<h2>Objetivos</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Reduzir Desperdícios</h3>
+<p>Diminuir o descarte de alimentos em estabelecimentos parceiros.</p>
+</div>
+
+<div class="card">
+<h3>Conectar Doadores</h3>
+<p>Facilitar a doação através de ferramentas digitais.</p>
+</div>
+
+<div class="card">
+<h3>Educar a Comunidade</h3>
+<p>Promover campanhas de conscientização sobre consumo sustentável.</p>
+</div>
+
+<div class="card">
+<h3>Segurança Alimentar</h3>
+<p>Ampliar o acesso a alimentos para famílias vulneráveis.</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="impacto">
+
+<h2>Impacto Esperado</h2>
+
+<div class="stats">
+
+<div class="stat">
+<h3>5.000+</h3>
+<p>Kg de alimentos recuperados</p>
+</div>
+
+<div class="stat">
+<h3>1.000+</h3>
+<p>Famílias atendidas</p>
+</div>
+
+<div class="stat">
+<h3>50+</h3>
+<p>Parceiros cadastrados</p>
+</div>
+
+<div class="stat">
+<h3>200+</h3>
+<p>Voluntários</p>
+</div>
+
+</div>
+
+</section>
+
+<section id="cadastro">
+
+<h2>Cadastre-se</h2>
+
+<form>
+
+<input type="text" placeholder="Nome Completo" required>
+
+<input type="email" placeholder="E-mail" required>
+
+<input type="tel" placeholder="Telefone">
+
+<select required>
+<option value="">Selecione</option>
+<option>Doador</option>
+<option>Voluntário</option>
+<option>Instituição Beneficiada</option>
+<option>Parceiro</option>
+</select>
+
+<textarea rows="5" placeholder="Mensagem"></textarea>
+
+<button type="submit">
+Enviar Cadastro
+</button>
+
+</form>
+
+</section>
+
+<section id="contato">
+
+<h2>Contato</h2>
+
+<div class="card">
+
+<p><strong>Cidade:</strong> Uberlândia - MG</p>
+
+<p><strong>E-mail:</strong> contato@conectaalimento.org</p>
+
+<p><strong>Instagram:</strong> @conectaalimento</p>
+
+<p><strong>Facebook:</strong> Conecta Alimento</p>
+
+<p><strong>ODS:</strong> 01 - Erradicação da Pobreza | 02 - Fome Zero</p>
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Conecta Alimento</h3>
+
+<p>Menos desperdício. Mais solidariedade.</p>
+
+<p>© 2026 - Todos os direitos reservados.</p>
+
+</footer>
+
+</body>
+</html>
